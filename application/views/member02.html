@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>首頁</title>
+
+    <!-- core CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/rotate.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slider.css" type="text/css">
+    <link type="text/css" rel="stylesheet" href="css/liquidcarousel.css" />
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.0.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-tabs-rotate.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/jquery.liquidcarousel.pack.js"></script>
+    <script src="js/backtop.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#featured").tabs({
+                fx: {
+                    opacity: "toggle"
+                }
+            }).tabs("rotate", 5000, true);
+
+
+            $('.flexslider').flexslider({
+                animation: 'fade',
+                controlsContainer: '.flexslider'
+            });
+
+
+            $('#liquid1').liquidcarousel({
+                height: 225, //the height of the list
+                duration: 500, //the duration of the animation
+                hidearrows: true //hide arrows if all of the list items are visible
+            });
+
+        });
+    </script>
+
+
+
+</head>
+
+<!--/head-->
+
+<body>
+
+    <!-- top sample 
+   
+    <div class="full-wrapper">
+    		<div class="wrapper"></div>
+    </div>
+    
+    -->
+
+
+    <!-- 版頭區塊開始 －－－－－－－－－－  -->
+
+    <!-- top-header -->
+
+    <div class="outer-header">
+        <div class="header">
+            <div class="hlogo"><img src="images/logo.png">
+            </div>
+            <div class="hsscollum">
+                <div class="hc-search">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input class="form-control" value="搜尋" type="text">
+                            <a class="searchicon" href="#"><img src="images/searchicon.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hc-share">
+                    <a href="#"><img src="images/sharefb.png">
+                    </a>
+                    <a href="#"><img src="images/sharemail.png">
+                    </a>
+                    <a href="#"><img src="images/sharerss.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- top menu -->
+    <div class="outer-hmenu">
+        <div class="hmenu">
+            <div class="hmenu-left">
+                <ul>
+                    <li class="select"><a href="#">會員專區</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="hmenu-right">
+                <ul>
+                    <li class="mailpart">
+                        <a href="#"><img src="images/mailicon.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="member.html"><img src="images/headlogin.png"> 王小明</a>
+                    </li>
+                    <li><a href="gocart.html"><i class="fa fa-shopping-cart"></i> 購物車</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 內容區塊開始 －－－－－－－－－－  -->
+
+    <div class="section group outerform">
+        <div class="formc fmc-left col span_4_of_4">
+        
+            <!-- 表格頁面 -->
+            <div class="form-section">
+                <div class="topar">
+                    <span class="title">會員專區</span>
+                </div>
+                <div class="bottomar">
+                    <div class="bfull">
+                        <h4>XXX，您好!</h4>
+                        <!-- tabs -->
+
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs nav-justified tabmenu" id="myTab">
+                                <li class="active"><a href="#order" data-toggle="tab">訂單管理</a></li>
+                                <li><a href="#profile" data-toggle="tab">基本資料管理</a></li>
+                                <li><a href="#info" data-toggle="tab">訊息管理</a></li>
+                                
+                            </ul>
+                            <form class="form-horizontal row-border" action="#">
+                                <div class="tab-content" style="margin: 20px 0px;">
+
+                                    <!-- 訂單管理 -->
+                                    <div class="tab-pane active" id="order">
+                                        <div class="form-group" align="center">
+                                            <div class="innertitle" style="width:1160px">
+                                                訂單管理
+                                            </div>
+                                        </div>
+										<div class="col-md-12 ">
+											<div class="form-group row">
+                                            <div class="col-md-2 tabsmalltitle" align="right">
+                                                <label class="control-label">訂單種類：</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select id="year" class="form-control" name="year" size="1">
+                                                    <option value="">影音</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" align="center">
+                                            <table class="table table-bordered" style="width: 100%">
+                                                <tr>
+                                                    <th class="active" style="width: 20%">訂單編號</th>
+                                                    <th class="active" style="width: 30%">訂購內容</th>
+                                                    <th class="active" style="width: 10%">訂購狀態</th>
+                                                    <th class="active" style="width: 20%">訂購時間</th>
+                                                    <th class="active" style="width: 10%">訂購總金額</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>112312312312</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+										</div>
+                                        
+                                    </div>
+
+                                    <!-- 基本資料管理 -->
+                                    <div class="tab-pane" id="profile">
+                                        <div class="form-group" align="center">
+
+                                            <div class="innertitle" style="width:1160px">
+                                                基本資料管理
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">帳號</label>
+                                            <div class="col-md-7">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">密碼</label>
+                                            <div class="col-md-7">
+                                                <input class="form-control" type="password" name="pass">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">姓名</label>
+                                            <div class="col-md-7">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">暱稱</label>
+                                            <div class="col-md-7">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">生日</label>
+                                            <div class="col-md-2">
+                                                <select id="year" class="form-control" name="year" size="1">
+                                                    <option value="">年</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select id="month" class="form-control" name="month" size="1">
+                                                    <option value="">月</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <select id="date" class="form-control" name="date" size="1">
+                                                    <option value="">日</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">性別</label>
+                                            <div class="col-md-7">
+
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                                        男性
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                        女性
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">手機門號</label>
+                                            <div class="col-md-7">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">是否接收電子報</label>
+                                            <div class="col-md-7">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios2" id="optionYes" value="option1" checked="">
+                                                        是
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios2" id="optionsNo" value="option2">
+                                                        否
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row col-md-11" align="center">
+                                            <div class="col-md-4 col-md-offset-5">
+                                                <input class="btn btn-primary btn-lg btn-block yelbt01" type="submit" value="儲存修改">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 最愛店家管理 -->
+                                    <div class="tab-pane" id="info">
+                                        <div class="form-group" align="center">
+                                            <div class="innertitle" style="width:1160px">
+                                                訊息管理
+                                            </div>
+                                        </div>
+                                        <div class="form-group " align="center">
+										<div align="right " class="col-md-12" style="margin-right:-10px;">
+											
+										</div>
+                                            <table class="table table-bordered" style="width: 97%">
+                                                <tr>
+													<th class="active" style="width: 5%" ></th>
+                                                    <th class="active" style="width: 75%">訊息</th>
+                                                    <th class="active" style="width: 14%">日期</th>
+                                                    <th class="active" style="width: 6%"><input class="btn btn-danger btn-sm" type="submit" value="刪除訊息"></th>
+
+                                                </tr>
+                                                <tr>
+													<td align="center"><input type="checkbox"></td>
+                                                    <td>歡迎新加入會員提醒信箱內容學讀內容</td>
+                                                    <td>2015年2月10日</td>
+                                                    <td>
+                                                       
+                                                        <button type="button" class="btn btn-sm btn-primary yelbt01" data-toggle="modal" data-target="#edit">查看內容</button>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+													<td align="center"><input type="checkbox"></td>
+                                                    <td>歡迎新加入會員提醒信箱內容學讀內容</td>
+                                                    <td>2015年2月10日</td>
+                                                    <td>
+                                                       
+                                                        <button type="button" class="btn btn-sm btn-primary yelbt01" data-toggle="modal" data-target="#edit">查看內容</button>
+
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+													<td align="center"><input type="checkbox"></td>
+                                                    <td>歡迎新加入會員提醒信箱內容學讀內容</td>
+                                                    <td>2015年2月10日</td>
+                                                    <td>
+                                                       
+                                                        <button type="button" class="btn btn-sm btn-primary yelbt01" data-toggle="modal" data-target="#edit">查看內容</button>
+
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+													<td align="center"><input type="checkbox"></td>
+                                                    <td>歡迎新加入會員提醒信箱內容學讀內容</td>
+                                                    <td>2015年2月10日</td>
+                                                    <td>
+                                                       
+                                                        <button type="button" class="btn btn-sm btn-primary yelbt01" data-toggle="modal" data-target="#edit">查看內容</button>
+
+                                                    </td>
+                                                </tr>
+                                                
+                                            
+                                            </table>
+                                            <!-- lightbox -->
+                                            <div class="modal fade" id="edit" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header ligheboxheader">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                            <h4 class="modal-title" id="gridSystemModalLabel">
+                                                                查看內容
+                                                            </h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="container-fluid">
+
+                                                                <div class="margin-bt" align="left">
+                                                                    <span class="brownclr fontmedg">歡迎成為會員，請細讀重要事項</span>
+                                                                </div>
+																<div class="margin-bt grayblk-color" align="left">
+																	日期：2015年11月8日
+																</div>
+																<div class="content-overf" align="left">
+																	經驗豐富的網頁設計師，通常都熟知所謂 CSS hack，conditional comment 之類的用法，因為在電腦的瀏覽環境，明明是同一段符合W3C的標準語法，卻可能在 IE6、IE7、IE8、IE8 相容性模式、Vista 與 Win7 的 IE8、IE9、IE9 相容性模式、IE10、IE10 相容性模式、Win7 的IE10，IE11、IE11相容性模式、Modern IE、Win7 的 IE11，Win8 的 IE11，Win8.1 的 IE11，Firefox，Chrome，Safari in Mac OS，Opera，360 瀏覽器......上面產生異常的瀏覽情況。
+
+後來手機與平板的出現讓網頁環境又再次推進，不能再以「IE8不支援」「IE 的使用者怎麼辦」當藉口，因為行動裝置的瀏覽器基本上都支援 CSS3 等新的網頁語法，而且行動裝置的的淘汰週期比電腦更快。近一兩年進入網頁設計職場的新人，反而有些知道如何用 css 畫台灣國旗，卻不知道\0\9*_ 之類的 IE css hack。
+
+但是行動裝置一樣有瀏覽器相容性問題，如 android 4.x 不支援 calc，android 4.3 以下不支援 Viewport units，iOS 則是使用 Viewport units 與 html body overflow:hidden 時會有怪情況，也不支援 background-attachment: fixed 與 window.open()。
+																</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                                                            <button type="button" class="btn btn-primary yelbt01">下一篇</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- lightbox END -->
+                                        </div>
+                                    </div>
+
+                                    <!-- 常用地址管理 -->
+                                    <div class="tab-pane" id="address">
+                                        <div class="form-group" align="center">
+                                            <div class="innertitle" style="width:1010px">
+                                                常用地址管理
+                                            </div>
+                                        </div>
+                                        <div class="form-group row" align="center">
+                                            <div class="col-md-3" style="text-align:left;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#insert">新增外送地址</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" align="center">
+                                            <table class="table table-bordered" style="width: 97%">
+                                                <tr>
+                                                    <th class="active" style="width: 50%">常用地址</th>
+                                                    <th class="active" style="width: 20%">是否為預設值</th>
+                                                    <th class="active" style="width: 30%">狀態</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>地址</td>
+                                                    <td>是</td>
+                                                    <td>
+                                                        <input class="btn btn-default" type="button" value="刪除">
+                                                        <input class="btn btn-default" type="button" value="修改">
+                                                        <input class="btn btn-default" type="button" value="立即搜尋">
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- lightbox -->
+                                            <div class="modal fade" id="insert" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header ligheboxheader">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                            <h4 class="modal-title">
+                                                                新增常用地址
+                                                            </h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="container-fluid">
+
+                                                                <div class="form-group">
+                                                                    <label for="message-text" class="control-label">新增您的常用地址</label>
+
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="col-md-6">
+                                                                        <select class="form-control" name="year" size="1">
+                                                                            <option value="">台北市</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <select class="form-control" name="month" size="1">
+                                                                            <option value="">中正區</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input class="form-control" type="text">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="col-md-6" align="right">
+                                                                        <label class="control-label">是否為預設值</label>
+                                                                    </div>
+                                                                    <div class="col-md-6" align="left">
+                                                                        <div class="radio">
+                                                                            <label>
+                                                                                <input type="radio" name="optionsRadios" value="option1" checked="">
+                                                                                是
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="radio">
+                                                                            <label>
+                                                                                <input type="radio" name="optionsRadios" value="option2">
+                                                                                否
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                                                            <button type="button" class="btn btn-primary">儲存</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- lightbox END -->
+                                        </div>
+                                    </div>
+
+                                    <!-- 紅利點數 -->
+                                    <div class="tab-pane" id="bonus">
+                                        <div class="form-group" align="center">
+                                            <div class="innertitle" style="width:1010px">
+                                                紅利點數
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-4" align="left">
+                                                <p>
+                                                    您目前累積的紅利點數： <span style="color: red">30000</span>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group" align="center">
+                                            <table class="table table-bordered" style="width: 97%">
+                                                <tr>
+                                                    <th class="active" style="width: 15%">紅利點數名稱</th>
+                                                    <th class="active">紅利點數說明</th>
+                                                    <th class="active" style="width: 20%">相關連結</th>
+                                                    <th class="active" style="width: 10%">紅利點數</th>
+                                                    <th class="active" style="width: 15%">日期</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>112312312312</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /tabs -->
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 表格頁面 -->
+            <div class="form-section">
+                <div class="topar">
+                    <span class="title">訂單管理 - 訂單明細</span>
+                </div>
+                <div class="bottomar">
+                    <div class="bfull">
+          
+          
+                        <div class="form-group row" align="right">
+                            <div class="col-md-3" style="text-align:left;">
+                                <input class="btn btn-default" type="button" value="回上一頁">
+                            </div>
+                        </div>
+                            
+                               <div class="form-group" align="center">
+                                  <div class="innertitle">
+                                       ※訂單編號※
+                                  </div>
+                               </div>
+
+
+
+
+                        <div class="form-group" align="center">
+                            <table class="table table-bordered" style="text-align: center; width: 1010px">
+                                <tr class="active">
+                                    <td colspan="4">test店家</td>
+                                </tr>
+
+                                <tr>
+                                    <th class="active" width="150px">
+                                        訂購人姓名:
+                                    </th>
+                                    <td></td>
+                                    <th class="active" width="150px">
+                                        訂購人連絡電話:
+                                    </th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="active" width="150px">
+                                        要求送達時間:
+                                    </th>
+                                    <td></td>
+                                    <th class="active" width="150px">
+                                        備註:
+                                    </th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="active" width="150px">
+                                        外送地址:
+                                    </th>
+                                    <td colspan="3"></td>
+                                </tr>
+                            </table>
+								
+                               <div class="form-group" align="center">
+                                  <div class="innertitle">
+                                       ※訂單明細※
+                                  </div>
+                               </div>
+                                               
+
+                            <table class="table table-bordered" style="text-align: center; width: 1010px">
+
+
+                                <tr>
+                                    <th class="active" width="150px">
+                                        產品名稱
+                                    </th>
+
+                                    <th class="active" width="150px">
+                                        訂單細項
+                                    </th>
+                                    <th class="active" width="150px">
+                                        訂購數量
+                                    </th>
+                                    <th class="active" width="150px">
+                                        單價
+                                    </th>
+                                    <th class="active" width="150px">
+                                        小計金額
+                                    </th>
+
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <span style="color: red;">$3300</span>
+                                    </td>
+                                </tr>
+
+                            </table>
+          
+                            
+                           <div class="priceshow">
+                            <div>訂購總金額：</div><div class="bigprice">$3300</div>
+                          </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+
+    <!-- 內容區塊結束 －－－－－－－－－－  -->
+    <!-- 版尾開始 －－－－－－－－－－  -->
+    <div class="outer-footer">
+        <div class="pfooter section group">
+
+            <div class="copyright col span_5_of_6">
+                <p>讀者服務專線：886-2-2662-0332　傳真電話：886-2-2662-6048　 服務時間：週一～週五：9:00~17:30</p>
+                <p>本網站資訊 由實戰操盤室所有 若有任何建議或疑問請與我們連繫 Copyright © MakeMoney All Rights Reserved</p>
+            </div>
+
+            <div class="share col span_1_of_6">
+                <p>追蹤實戰操盤室 +</p>
+                <a class="shareablk" href="#"><img src="images/sharerss.png">
+                </a>
+                <a class="shareablk" href="#"><img src="images/sharemail.png">
+                </a>
+                <a class="shareablk" href="#"><img src="images/sharefb.png">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 版尾結束 －－－－－－－－－－  -->
+
+
+    <a href="#0" class="cd-top"></a>
+</body>
+</html>

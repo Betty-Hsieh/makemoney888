@@ -1,0 +1,63 @@
+.liquid {
+		width: 1050px;
+	background: #FFFFFF url('../images/bodybackground.png') repeat-y scroll 50% 0;
+  /* border: 2px solid #19301C; */
+  -moz-border-radius: 10px 10px 10px 10px;
+  /* -webkit-border-radius: 10px 10px 10px 10px; */
+  /* border-radius: 10px 10px 10px 10px; */
+  padding: 40px 0; 
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(219,219,219,1);
+  -moz-box-shadow: 0px 1px 3px 1px rgba(219,219,219,1);
+  box-shadow: 0px 1px 3px 1px rgba(219,219,219,1);
+  position:relative;
+    height: 305px!important;
+}
+.liquid .previous {
+
+	display:block;
+  height: 76px;
+  width: 53px;
+	position:absolute;
+	 left: -2px;
+	  cursor:pointer;
+	    top: 95px;
+}
+.liquid .next {
+	display:block;
+  height: 76px;
+  width: 53px;
+
+  position:absolute;
+	  right:0;
+	  	  cursor:pointer;
+		    top: 95px;
+}
+.liquid ul li {
+	width: 293px;
+  background-color: #F2F2F2;
+
+  margin: 0;
+  border: 1px solid #D7D7D7;
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(219,219,219,1);
+  -moz-box-shadow: 0px 1px 3px 1px rgba(219,219,219,1);
+  box-shadow: 0px 1px 3px 1px rgba(219,219,219,1);
+  overflow:hidden;
+}
+.liquid ul li a img {
+
+}
+.liquid ul li .content {
+	height:55px;
+	line-height:55px;
+	text-align:center;
+	color:#333;
+	font-weight:bold;
+	  overflow: hidden;
+}
+
+.liquid .wrapper{
+	  margin-left: auto;
+  margin-right: auto;
+  float: none!important;
+  height: 227px!important;
+}
