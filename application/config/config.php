@@ -1,11 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-define('URL','http://127.0.0.1/codeigniter/');
-define('URL_CSS',URL.'resource/assets/css/');
-define('URL_JS',URL.'resource/assets/js/');
-define('URL_IMG',URL.'resource/assets/img/');
-define('URL_LESS',URL.'resource/assets/less/');
-define('URL_LIB',URL.'resource/assets/lib/');
+
+
+define('URL','http://localhost/makemoney888/');
+define('URL_CSS',URL.'resource/css/');
+define('URL_JS',URL.'resource/js/');
+define('URL_IMG',URL.'resource/img/');
+define('URL_LESS',URL.'resource/less/');
+define('URL_LIB',URL.'resource/lib/');
 
 /*
 |--------------------------------------------------------------------------
