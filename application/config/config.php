@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-
+/*routes*/
 define('URL','http://localhost/makemoney888/');
 define('URL_CSS',URL.'resource/css/');
 define('URL_JS',URL.'resource/js/');
