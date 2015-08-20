@@ -10,12 +10,12 @@
 
     <!-- core CSS -->
     <link href="<?php echo URL_CSS;?>/main.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/rotate.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/slider.css" type="text/css">
-    <link type="text/css" rel="stylesheet" href="css/liquidcarousel.css" />
+    <link href="<?php echo URL_CSS;?>/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo URL_CSS;?>/bootstrap-theme.css" rel="stylesheet">
+    <link href="<?php echo URL_CSS;?>/font-awesome.css" rel="stylesheet">
+    <link href="<?php echo URL_CSS;?>/rotate.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo URL_CSS;?>/slider.css" type="text/css">
+    <link type="text/css" rel="stylesheet" href="<?php echo URL_CSS;?>/liquidcarousel.css" />
 
 
     <script src="js/jquery.js"></script>
