@@ -1,12 +1,15 @@
 <?php
-class Epaper_Model extends CI_Model{
+if (!defined('BASEPATH'))
+    exit('No direct script access allowed');
+
+class Epaper_model extends CI_Model{
 	
 	function __construct(){
 		parent::__construct();
 	}
 	
 	function get_epaper_list(){
-		$this->db->select('eid,e_mail,e_content,e_title');
+		$this->db->select('uniqid,current_date,eid,title,content,status');
 		$this->db->from('epaper_list');
 		$data= $this->db->get();
 		return $data;
@@ -14,9 +17,9 @@ class Epaper_Model extends CI_Model{
 	}
 		
 	function get_epaper_one($eid){
-		$this->db->select('e_mail,e_content,e_title');
+		$this->db->select('uniqid,current_date,eid,title,content,status');
 		$this->db->from('epaper_list');
-		$this->db->where('eid',$eid);
+		$this->db->where('uniqid',$eid);
 		$data= $this->db->get();
 		return $data;
 	
@@ -27,15 +30,15 @@ class Epaper_Model extends CI_Model{
 		return $results;	
 	}
 	
-/*	function update_member($data,$id){
+	function update_epaper($data,$id){
 		$this->db->where('m_id', $id);
-		$results=$this->db->update('member_data', $data); 
+		$results=$this->db->update('epaper_list', $data); 
 		return $results;	
 	}
 	
-	function delete_member($id){
-		$results=$this->db->delete('member_data', array('m_id' => $id)); 
+	function delete_epaper($id){
+		$results=$this->db->delete('epaper_list', array('m_id' => $id)); 
 		return $results;	
-	}*/
+	}
 }
 ?>

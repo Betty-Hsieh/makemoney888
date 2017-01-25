@@ -3,7 +3,7 @@
 class Myphpmail {
     
 
-	function SendMail($data){
+	function SendMail($data=""){
 
 	require_once ("PHPMailer/PHPMailerAutoload.php");//載入PHPMailer類別 
 		  $mail = new PHPMailer();
@@ -20,11 +20,11 @@ class Myphpmail {
 		  //Gmail的SMTP是使用465port
 		  $mail->Host = "smtp.gmail.com";
 		  $mail->Port = 465;
-		  $mail->Username = 'it@gotutor4u.com';//帳號
-		  $mail->Password ='gotutor0987^';//密碼
+		  $mail->Username = 'drwateri80@gmail.com';//帳號
+		  $mail->Password ='i80isthebest';//密碼
 		
-		  $mail->From = 'info@gotutor4u.com';//寄件者
-		  $mail->FromName = 'GoTutor';//寄件者姓名
+		  $mail->From = 'service@soap.com.tw';//寄件者
+		  $mail->FromName = 'Soap';//寄件者姓名
 		  if(is_array($data['list'])){
 			foreach($data['list'] as $email){
 				$mail->AddAddress($email);
@@ -32,11 +32,7 @@ class Myphpmail {
 		  }
 		  else{
 			$mail->AddAddress($data['list']);
-		  } 
-		 	/*
-			$mail->AddAttachment($_FILES['file2']['tmp_name'],
-					 $_FILES['file2']['name']);
-			*/
+		  }
 		  $mail->CharSet = "utf-8";
 		  $mail->Subject = $data['subject'];//主旨
 		  $mail->Body = $data['body'];//內文

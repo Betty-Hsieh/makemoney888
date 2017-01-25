@@ -1,12 +1,23 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-define('URL','http://localhost/makemoney888/');
+$url_set="http://www.accsoap.com/";
+define('URL',$url_set);
+define('URL_INDEX',$url_set);
 define('URL_CSS',URL.'resource/css/');
 define('URL_JS',URL.'resource/js/');
-define('URL_IMG',URL.'resource/img/');
+define('URL_IMG',URL.'resource/images/');
 define('URL_LESS',URL.'resource/less/');
 define('URL_LIB',URL.'resource/lib/');
+define('Upload',URL.'upload/');
+
+define('CK',URL.'ckeditor/');
+
+define('URL_Download',URL.'download/');
+
+define('AdminBoostrap',URL.'resource/AdminLTE/bootstrap/');
+define('AdminDist',URL.'resource/AdminLTE/dist/');
+define('AdminPlugins',URL.'resource/AdminLTE/plugins/');
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +35,7 @@ define('URL_LIB',URL.'resource/lib/');
 | environments.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = $url_set;
 
 /*
 |--------------------------------------------------------------------------

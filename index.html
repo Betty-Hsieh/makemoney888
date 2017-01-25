@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<title>亦然手工肥皂</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3  col-xs-12 text-left hidden-xs">
+                    <a class="logo" href="index.php"><h1>手工亦然肥皂</h1></a>
+                </div>
+                <!---手機LOGO--->
+                <div class="visible-xs col-xs-2 col-xs-offset-5">
+                    <a class="navbar-brand logo" href="index.php"><h1></h1></a>
+                </div>
+                <div class="col-sm-9 col-xs-5 text-right">
+                    <ul class="list-inline link_list">
+                        <li class="hidden-xs"><a href="#" data-toggle="modal" data-target="#loginpanel" class="member_login" title="會員註冊">會員註冊</a></li>
+                        <li class="hidden-xs"><a href="#" class="" data-toggle="modal" data-target="#exampleModal"></i>會員登入</a></li>
+                        <!---<li class="hidden-xs">
+                            <form method="get" class="searchform" action="product_search.php">
+                                <div class="input-group">
+                                    <input type="text" class="form-control search_string animate4s_all" name="q" placeholder="Search">
+                                    <span class="input-group-btn">
+                                        <button class="btn" type="submit"><i class="glyphicon glyphicon-search text-default"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                        </li>-->
+                        <li>
+                            <div class="cart_quick_box">
+                                <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">購物車 <span class="badge">0</span></a>
+                                <!-----購物車籃
+                                <div class="dropdown-menu content pull-right">
+                                    <div class="row cart_header hidden">
+                                        <div class="col-sm-6 text-left">品項</div>
+                                        <div class="col-sm-2 text-center">數量</div>
+                                        <div class="col-sm-2">小計</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cart_quick_list col-xs-12">
+                                            <div class="row strict hide cart_quick_item">
+                                                <div class="col-xs-3 cart_quick_pic">
+                                                    <figure class="pic"><img class="img-responsive"></figure>
+                                                </div>
+                                                <div class="col-xs-9 cart_quick_text">
+                                                    <p class="price"></p>
+                                                    <h5 class="title"><a></a></h5>
+                                                    <span class="amount"></span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="empty_notice">
+                                        <div class="alert alert-danger" role="alert">
+                                            <p class="text-center">購物車是空的</p>
+                                        </div>
+                                        <p class="text-right">數量：0</p>
+                                    </div>
+                                    <div class="row checkout_btn hide">
+                                        <div class="col-sm-12">
+                                            <a class="btn btn-primary pull-right" data-toggle="modal" data-target="#loginpanel">立即結帳</a>
+                                            <span class="clearfix"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                --->
+                            </div>					
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	<header>
+    	<div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <!---手機三條線--->
+                <div class="navbar-header">				
+                    <button id="mobilemenubtn" type="button" class="navbar-toggle collapsed pull-left mobilemenubtn" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!--主選單-->
+                <div id="navbar" class="navbar-collapse collapse hidden-xs">
+                    <!--選單預設靠左-->
+                    <ul class="nav navbar-nav main_menu text-center">
+                        <li class="dropdown">
+                            <a href="">品牌介紹</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">最新消息</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">商品一覽</a>
+                            <div class="dropdown-menu row" style="background:url(//img3.365shop.com.tw/store34/upload/2015Jun/png/20150617103333982_1.png) #FFFFFF top right no-repeat">
+                                <div class="col-sm-9">
+                                    <ul class="list-unstyled drop_menu" role="menu">
+                                        <li>
+                                            <a href="#">飾品</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                            </ul>
+                                         </li>
+                                         <li>
+                                            <a href="#">服飾</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                            </ul>
+                                         </li>
+                                         <li>
+                                            <a href="#">系列</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                                <li><a href="">戒指</a></li>
+                                            </ul>
+                                         </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">客戶見證</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">課程報名</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">常見問題</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">聯絡我們</a>
+                        </li>
+                    </ul>	
+                </div><!--/.nav-collapse -->
+            </nav>
+        </div>
+    </header>
+	<!--手機選單-->
+    <nav class="mobile-menu mobile-menu-vertical mobile-menu-left visible-xs" id="mobile-menu">
+        <a href="#" class="remove mobile-menu-close"><span class="remove_i"></span></a>	
+        <!--手機搜尋框-->
+        <form method="get" class="searchform" action="product_search.php">
+            <div class="input-group">
+                <input type="text" class="form-control search_string animate4s_all" name="q" placeholder="Search">
+                <span class="input-group-btn">
+                    <button class="btn" type="submit"><i class="glyphicon glyphicon-search text-default"></i></button>
+                </span>
+            </div>
+        </form>
+        <!----會員連結---->
+        <ul class="list-unstyled">
+            <li><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"></i>會員登入</a></li>
+            <li><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"></i>會員登入</a></li>
+        </ul>	
+        <!----手機選單---->
+        <div class="menu_scroll">
+          <ul class="mobile_menu sub_menu navgoco-accordion-caret list-unstyled" data-carethtml="">
+                <li>
+                    <a>品牌介紹<i class="null"></i></a>
+                    <ul class="drop_menu_mobile list-unstyled" role="menu" data-index="5" style="display: none;">
+                        <li><a href="about.php?id=26706">About Us 關於</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>商品一覽<i class="null"></i></a>
+                    <ul class="drop_menu_mobile style list-unstyled" role="menu" data-index="0" style="display: none;">
+                        <li>
+                            <a href="">婚禮小物<i class="null"></i></a>
+                            <!---
+                            <ul class="list-unstyled shop_menu" data-index="1" style="display: none;">
+                                <li><a href="product_list.php?cid=1664">戒指</a></li>
+                                <li><a href="product_list.php?cid=1668">耳環</a></li>
+                                <li><a href="product_list.php?cid=1665">項鍊</a></li>
+                            </ul>--->
+                        </li>
+                        <li>
+                            <a href="">婚禮小物<i class="null"></i></a>
+                        </li>
+                    </ul>                
+                </li>
+    
+                <li>
+                    <a href="lookbook_list.php">客戶見證</a>
+                </li>
+                <li>
+                    <a href="lookbook_list.php">常見問題</a>
+                </li>
+                <li>
+                    <a href="lookbook_list.php">聯絡我們</a>
+                </li>
+          </ul>
+          <ul class="mobile_menu sub_menu mem navgoco-accordion-caret list-unstyled hidden">
+                <li><a>member</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="list-unstyled fixed_category">
+    	<li><a href="#">手工皂材料</a></li>
+        <li><a href="#">手工皂工具</a></li>
+        <li><a href="#">手工皂模具</a></li>
+        <li><a href="#">植物精油</a></li>
+        <li><a href="#">化妝品香精</a></li>
+    </ul>
+    <!---網站內容--->
+	<section class="main">
+		<div class="container">
+            <div class="index_list">
+            	<div class="row">
+                <!--促銷-->
+                    <div class="col-sm-3">
+                        <div class="ad_box">
+                            <a href="#" target="_blank" class="">
+                                <span class="discount">75折</span>
+                                <figure class="pic">
+                                    <img src="upload/advertising/banner1.jpg" class="img-responsive">
+                                </figure>
+                                <h5 class="title">玫瑰香氛<span class="price pull-right">1200元</span></h5>									
+                             </a>
+                        </div>
+                        <div class="ad_box">
+                            <a href="#" target="_blank" class="">
+                                <span class="discount">2件119元</span>
+                                <figure class="pic">
+                                    <img src="upload/advertising/banner1.jpg" class="img-responsive">
+                                </figure>
+                                <h5 class="title">葡萄京香<span class="price pull-right">1200元</span></h5>									
+                             </a>
+                        </div>
+                        <div class="ad_box">
+                            <a href="#" target="_blank" class="">
+                                <span class="discount">2件8折</span>
+                                <figure class="pic">
+                                    <img src="upload/advertising/banner1.jpg" class="img-responsive">
+                                </figure>
+                                <h5 class="title">廣告名稱<span class="price pull-right">1200元</span></h5>									
+                             </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-9">
+                        <!--首頁banner-->
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <a href="#">
+                                        <img src="upload/advertising/banner1.jpg" alt="..."  class="img-responsive">
+                                        <div class="carousel-caption"></div>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="upload/advertising/banner1.jpg" alt="..."  class="img-responsive">
+                                        <div class="carousel-caption"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <h4 class="title"><span class="glyphicon glyphicon-bullhorn"></span>NEWS<small class="more"><a href="#">more+</a></small></h4>
+                        <ul class="list-unstyled news_list">
+                            <li><a href="#"><span class="date">2015-12-01</span>皇家玫瑰肥皂新上市囉皇家玫瑰肥皂新上市囉皇家玫瑰肥皂新上市囉</a></li>
+                            <li><a href="#"><span class="date">2015-12-01</span>桃園縣市政府手工皂課程12/23日</a></li>
+                            <li><a href="#"><span class="date">2015-12-01</span>現在母乳造代工特價中</a></li>
+                        </ul>
+                    </div>
+            	</div>
+            </div>
+            <div class="product_list index_list">
+                <h3 class="title"><span class="glyphicon glyphicon-star"></span>產品 PRODUCT<small class="more"><a href="#">more+</a></small></h3>
+                <ul class="list-unstyled list-inline">
+                    <li class="category"><a href="#">婚禮小物</a></li>
+                    <li class="category"><a href="#">婚禮小物</a></li>
+                    <li class="category"><a href="#">婚禮小物</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="product_box">
+                            <figure class="pic">
+                                <img src="http://61.63.55.131/57466/product_5902421_2.jpg" class="img-responsive">
+                            </figure>
+                            <h5 class="title">愛情鳥胡椒鹽罐<span class="price pull-right">1200元</span></h5>
+                            <div class="text-center"><a class="btn btn-default" href="#" role="button">加入購物車</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="product_box">
+                            <figure class="pic">
+                                <img src="http://61.63.55.131/57466/product_5902421_2.jpg" class="img-responsive">
+                            </figure>
+                            <h5 class="title">愛情鳥胡椒鹽罐<span class="price pull-right">1200元</span></h5>
+                            <div class="text-center"><a class="btn btn-default" href="#" role="button">加入購物車</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="product_box">
+                            <figure class="pic">
+                                <img src="http://61.63.55.131/57466/product_5902421_2.jpg" class="img-responsive">
+                            </figure>
+                            <h5 class="title">愛情鳥胡椒鹽罐<span class="price pull-right">1200元</span></h5>
+                            <div class="text-center"><a class="btn btn-default" href="#" role="button">加入購物車</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="product_box">
+                            <figure class="pic">
+                                <img src="http://61.63.55.131/57466/product_5902421_2.jpg" class="img-responsive">
+                            </figure>
+                            <h5 class="title">愛情鳥胡椒鹽罐<span class="price pull-right">1200元</span></h5>
+                            <div class="text-center"><a class="btn btn-default" href="#" role="button">加入購物車</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="product_box">
+                            <figure class="pic">
+                                <img src="http://61.63.55.131/57466/product_5902421_2.jpg" class="img-responsive">
+                            </figure>
+                            <h5 class="title">愛情鳥胡椒鹽罐<span class="price pull-right">1200元</span></h5>
+                            <div class="text-center"><a class="btn btn-default" href="#" role="button">加入購物車</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="product_box">
+                            <figure class="pic">
+                                <img src="http://61.63.55.131/57466/product_5902421_2.jpg" class="img-responsive">
+                            </figure>
+                            <h5 class="title">愛情鳥胡椒鹽罐<span class="price pull-right">1200元</span></h5>
+                            <div class="text-center"><a class="btn btn-default" href="#" role="button">加入購物車</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="product_box">
+                            <figure class="pic">
+                                <img src="http://61.63.55.131/57466/product_5902421_2.jpg" class="img-responsive">
+                            </figure>
+                            <h5 class="title">愛情鳥胡椒鹽罐<span class="price pull-right">1200元</span></h5>
+                            <div class="text-center"><a class="btn btn-default" href="#" role="button">加入購物車</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="product_box">
+                            <figure class="pic">
+                                <img src="http://61.63.55.131/57466/product_5902421_2.jpg" class="img-responsive">
+                            </figure>
+                            <h5 class="title">愛情鳥胡椒鹽罐<span class="price pull-right">1200元</span></h5>
+                            <div class="text-center"><a class="btn btn-default" href="#" role="button">加入購物車</a></div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="index_list">
+                        <h3 class="title"><span class="glyphicon glyphicon-thumbs-up"></span>SHARE<small class="more"><a href="#">more+</a></h3> 
+                        <a href="#" class="share_box">
+                            <h5 class="title">我的膚質狀況</h5>
+                            <p class="txt">乾性肌膚，皮膚薄，白紅肌無論四季，只要陽光比較大的日子，不擦防曬油出門一定會起疹子臉部狀況和身體膚質一樣，也是乾性肌膚，有斑但幾乎不長痘緣起知道YuSoap是因為我的好友魯西是個資深手工皂控再加上去年冬天皮膚超級乾乾性肌膚，皮膚薄，白紅肌無論四季，只要陽光比較大的日子，不擦防曬油出門一定會起疹子臉部狀況和身體膚質一樣，也是乾性肌膚，有斑但幾乎不長痘緣起知道YuSoap是因為我的好友魯西是個資深手工皂控再加上去年冬天皮膚超級乾</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                
+                <div class="col-sm-7">
+                    <div class="course_list index_list">
+                        <h3 class="title "><span class="glyphicon glyphicon-book"></span>COURSE<small class="more"><a href="#">more+</a></small></h3>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="course_box">
+                                    <h5 class="title">冷製皂入門皂~家事皂</h5>
+                                    <p class="">會員價：<span class="price">1200元</span> / 一般價：<span class="price">1200元</span></p>
+                                    <p class="txt">課程皆採預約製，一人即開課!請於報名註明上課日期、大名、電話將有專人為您服務喔!</p>
+                                     <div class="text-center"><a class="btn btn-default" href="#" role="button">報名</a></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="course_box">
+                                    <h5 class="title">冷製皂入門皂~家事皂</h5>
+                                    <p class="">會員價：<span class="price">1200元</span> / 一般價：<span class="price">1200元</span></p>
+                                    <p class="txt">課程皆採預約製，一人即開課!請於報名註明上課日期、大名、電話將有專人為您服務喔!</p>
+                                    <div class="text-center"><a class="btn btn-default" href="#" role="button">報名</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-5">
+                    <div class="index_list">
+                        <h3 class="title"><span class="glyphicon glyphicon-globe"></span>FAQ<small class="more"><a href="#">more+</a></small></h3>
+                        <ul class="list-unstyled faq_list">
+                            <li><a href="#">Q：皇家玫瑰肥皂新上市囉皇家玫瑰肥皂新上市囉皇家玫瑰肥皂新上市囉?</a></li>
+                            <li><a href="#">Q：桃園縣市政府手工皂課程12/23日舉辦?</a></li>
+                            <li><a href="#">Q：現在母乳造代工特價中?</a></li>
+                            <li><a href="#">Q：最新消息最新消息?</a></li>
+                            <li><a href="#">Q：最新消息最新消息?</a></li>
+                            <li><a href="#">Q：最新消息最新消息?</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    	</div>
+	</section>
+    <footer>
+        <div class="container">
+            <ul class="list-unstyled list-inline text-center">
+                <li><a href="">品牌介紹</a></li>
+                <li><a href="">最新消息</a></li>
+                <li><a href="">產品一覽</a></li>
+                <li><a href="">客戶見證</a></li>
+                <li><a href="">課程報名</a></li>
+                <li><a href="">常見問題</a></li>
+                <li><a href="">聯絡我們</a></li>
+            </ul>
+            <p class="text-center">2015 手工亦然肥皂 All Rights Reserved.</p>
+        </div>
+    </footer>
+	
+    <div class="scroll-top-btn">
+        <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-angle-up"></i>
+        </span>
+    </div>
+    <!---會員登入介面---->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">會員登入</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="email" class="control-label">帳號</label>
+                <input type="text" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="password" class="control-label">密碼:</label>
+                <textarea class="form-control" id="password"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+            <button type="button" class="btn btn-primary">登入</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---跳出視窗--->
+    <div class="modal fade" id="alertpanel" tabindex="-1" role="dialog" aria-labelledby="alertLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header text-danger">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="alertLabel">訊息</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">知道了</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

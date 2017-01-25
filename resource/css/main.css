@@ -866,11 +866,11 @@ margin-left: 5px;
     font-size: 15px;
     color:#6a6a6a;
     background-color: #f3f3f3;
-    height:60px;
+    height:56px;
     overflow:hidden;
     padding:10px;
+	word-wrap: break-word;
 }
-
 
 .indexcol-type7{
     padding: 10px;
@@ -1298,6 +1298,32 @@ width: 100%;
     margin-bottom: 10px;
 }
 .inpsub-lect-intrors .intrors-botm p{}
+
+.inpsub-lect-intrors .intrors-botm-sec{
+    margin-bottom: 10px;
+    border-top: 1px solid #e3e3e3;
+
+    padding-bottom:10px;
+    padding-top: 10px;
+}
+
+.inpsub-lect-intrors .intrors-botm-sec .title{
+    font-size: 18px;
+    color: #ac8d31;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.inpsub-lect-intrors .intrors-botm-sec ul{}
+.inpsub-lect-intrors .intrors-botm-sec ul li{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.inpsub-lect-intrors .intrors-botm-sec ul li a{
+    color:#5b5b5b;
+}
+
 .inpsub-lect-intrors .intrors-links{
     float:right;
     margin-bottom: 10px;
@@ -1463,6 +1489,16 @@ width: 100%;
 }
 .inpsub-coureinp-ctnbox{}
 .inpsub-coureinp-ctnbox p{}
+
+.introfullimg{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.insmarn-left{
+    margin-left: 7px;
+}
 
 /*影音內頁*/
 .inpsub-videolt{
