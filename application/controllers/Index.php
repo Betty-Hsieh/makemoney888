@@ -400,6 +400,7 @@ class Index extends CI_Controller{
        if(!empty($row->price)){
            
            //檢查價格
+           $Price=0;
            $product_price=$row->price;
            $cost=$row->cost;
            $products_id=$row->products_id;
@@ -412,7 +413,9 @@ class Index extends CI_Controller{
            //判斷是否有會員，給予會員價格
            $member_price=0;
            if(!empty($id)){
-                $member_price=$row->member_price;
+                // $member_price=$row->member_price;
+                $member_price=$row->m_price;
+                $Price=$member_price;
            }
            
            //檢查是否有全館折扣
@@ -422,7 +425,7 @@ class Index extends CI_Controller{
                 $discount_price=round($product_price*$shop_discount->fvalue2/100);
                 
                 if($member_price>$discount_price){
-                    $product_price=$discount_price;
+                    $Price=$discount_price;
                 }
            } 
            
@@ -438,7 +441,7 @@ class Index extends CI_Controller{
                 'id'      => $uniqid.$pd_id,
                 'qty'     => $order_number,
                 'productid'   => $products_id,
-                'price'   => $product_price,
+                'price'   => $Price,
                 'cost'   => $cost,
                 'shipping_discount'   => $shipping_discount,
                 'name'    => $product_title,

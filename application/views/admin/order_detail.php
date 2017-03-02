@@ -75,7 +75,9 @@
                       <tr class="danger">
                         <th>編號</th>
                         <th>商品名稱</th>
+                        <!--
                         <th>子商品</th>
+                        -->
                         <th>單價</th>
                         <th>商品數</th>
                         <th>總價</th>
@@ -87,6 +89,7 @@ foreach($SubOrder as $ok => $srow){
     echo "<tr>";
         echo "<td>".$srow['trans_id']."</td>";
         echo "<td>".$srow['product_name']."</td>";
+        /*
         echo "<td>";
         if(!empty($srow['SubProduct'])){ 
             foreach($srow['SubProduct'] as $pk => $pv){
@@ -96,6 +99,7 @@ foreach($SubOrder as $ok => $srow){
             }
         }
         echo "</td>";
+        */
         echo "<td>".$srow['sale_price']."</td>";
         if(is_numeric($srow['ordernumber'])){
             echo "<td>".$srow['ordernumber']."</td>";

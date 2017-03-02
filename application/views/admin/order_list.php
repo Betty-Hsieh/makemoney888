@@ -1,7 +1,7 @@
   <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
-		<?php include_once("top_bar.php");?>
-      <?php include_once("left_menu_bar.php");?>
+<?php include_once("top_bar.php");?>
+<?php include_once("left_menu_bar.php");?>
       <div class="content-wrapper">
         <section class="content-header">
           <h1>訂單管理</h1>
@@ -21,7 +21,7 @@
                   <h3 class="box-title"></h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
-                  <table class="table table-bordered table-striped data_table">
+                  <table class="table table-bordered table-striped dataTable">
                     <thead>
                       <tr>
                         <th>編號</th>
@@ -106,6 +106,24 @@
 <!-- page script -->
 <script language="javascript">
 $(function(){
+$(".dataTable").DataTable({
+    "language": {
+        "lengthMenu": "每頁顯示 _MENU_ 筆資料",
+        "zeroRecords": "未查詢到資料 - 抱歉",
+        "info": "顯示  _PAGE_ / _PAGES_",
+        "infoEmpty": "沒有任何資料",
+        "infoFiltered": "(filtered from _MAX_ total records)",
+            paginate: {
+            first:      "第一頁",
+            previous:   "前一頁",
+            next:       "下一頁",
+            last:       "最後頁",
+        },
+        "bStateSave":true,
+    },
+    "order": [[0, "desc" ]]
+});   
+    
 	delete_member=function(id){
 		if(confirm("確定刪除此訂單嗎?")){
 		   $.ajax({

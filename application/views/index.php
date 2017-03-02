@@ -109,7 +109,8 @@
                                 <img src="<?php echo Upload."products/".$product_row->picture;?>" class="img-responsive">
                                 </a>
                             </figure>
-                            <h5 class="title"><?php echo $product_row->product_title;?>
+                            <h5 class="title">
+                            <span class="itemTitle"><?php echo $product_row->product_title;?></span>
                             <span class="price pull-right">
                                 一般&nbsp;:&nbsp;
                                 <?php 
